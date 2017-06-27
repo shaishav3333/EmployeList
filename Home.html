@@ -1,0 +1,26 @@
+<div >
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>BirthDate</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="emp in data">
+                 <td>{{emp.name}}</td>
+                <td>{{emp.BirthDate}}</td>
+                <td>{{emp.Age}}</td>
+                <td><button type="button" class="btn btn-danger btn-xs" ng-click="delete($index)">Delete</button>
+                    <button type="button" class="btn btn-info btn-xs" ng-click="edit($index)">Edit</button></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    <a href="#EmployeeList"><button type="button" class="btn btn-primary btn-block" ng-click="">Add Employee</button></a>
+    </div>
+</div>
